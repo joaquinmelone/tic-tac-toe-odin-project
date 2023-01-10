@@ -10,7 +10,9 @@
 <body>
     <script src="script.js" defer></script>
 
-    <header></header>
+    <header>Tic Tac Toe</header>
+
+    <div class="congratulate-winner"></div>
 
     <div class="gameboard-container">
         <button class="gameboard-space"></button>
@@ -24,6 +26,31 @@
         <button class="gameboard-space"></button>
     </div>
 
+    <div class="button-box">
+      <button id="restart-button">Restart</button>
+      <button id="change-players-button">Change Players</button>
+    </div>
+    
+
     <footer>The Odin Project 2023</footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Players</div>
+        </div>
+        <div class="modal-body">
+          <form>
+              <label for="player-name-1">First player's name:</label>
+              <input name="player-name-1" id="player-name-1" type="text" placeholder="Name" required>
+
+              <label for="player-name-2">Second player's name:</label>
+              <input name="player-name-2" id="player-name-2" type="text" placeholder="Name" required>
+              
+              <input id="submit-button" type="submit"></input>
+          </form>
+        </div>
+      </div>
+
+      <div id="overlay"></div>
 </body>
 </html>
